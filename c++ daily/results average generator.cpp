@@ -2,9 +2,37 @@
 
 using namespace std;
 
+void displaymessage(double average)
+{
+  if (average>=0 && average<40)
+    {
+        cout << "you seriously need to pull up your socks";
+    }
+    else if(average>=40 && average<50)
+    {
+        cout << "with a little effort you could be getting good grades";
+    }
+    else if(average>=50 && average<65)
+    {
+        cout << "almost there, you just need to believe in yourself";
+    }
+    else if(average>=65 && average<75)
+    {
+        cout << "amazing";
+    }
+    else if (average>=75 && average<=100)
+    {
+        cout << "awesome, you are the best ";
+    }
+    else
+    {
+        cout << "score entered is invalid check it again";
+    }
+}
+
 int main()
 {
-    string name;
+   string name;
     double marks1,marks2,marks3;
     double average;
 
@@ -28,5 +56,36 @@ int main()
     average= (marks1+marks2+marks3)/3;
     cout << "the average is : "<< average;
     cout << endl;
+
+    if (average>=0 && average<40)
+    {
+        cout << "Overall You got a E";
+    }
+    else if(average>=40 && average<50)
+    {
+        cout << "Overall Got a D";
+    }
+    else if(average>=50 && average<65)
+    {
+        cout << "Overall Got a C";
+    }
+    else if(average>=65 && average<75)
+    {
+        cout << "Overall Got a B";
+    }
+    else if (average>=75 && average<=100)
+    {
+        cout << "Overall Got an A ";
+    }
+    else
+    {
+        cout << "score entered is invalid check it again \n";
+    }
+
+    cout << endl;
+
+   displaymessage(average);
+   cout << endl;
+
     return 0;
 }

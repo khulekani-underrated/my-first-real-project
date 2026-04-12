@@ -1,0 +1,16 @@
+# Compiled files
+*.exe
+*.o
+*.obj
+
+# Code::Blocks files
+*.layout
+*.depend
+*.cbp
+*.user
+
+# Build folders
+bin/
+obj/
+Debug/
+Release/
