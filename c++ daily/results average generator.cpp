@@ -2,27 +2,27 @@
 
 using namespace std;
 
-void displaymessage(double average)
+void displaymessage(double average, string name)
 {
   if (average>=0 && average<40)
     {
-        cout << "you seriously need to pull up your socks";
+        cout << "you seriously need to pull up your socks "<<"("<< name <<")" ;
     }
     else if(average>=40 && average<50)
     {
-        cout << "with a little effort you could be getting good grades";
+        cout << "with a little effort you could be getting good grades " <<"("<< name << ")";
     }
     else if(average>=50 && average<65)
     {
-        cout << "almost there, you just need to believe in yourself";
+        cout << "almost there, you just need to believe in yourself " <<"("<< name <<")";
     }
     else if(average>=65 && average<75)
     {
-        cout << "amazing";
+        cout << "amazing " <<"("<< name<<")";
     }
     else if (average>=75 && average<=100)
     {
-        cout << "awesome, you are the best ";
+        cout << "awesome, you are the best " <<"("<< name<<")";
     }
     else
     {
@@ -84,7 +84,7 @@ int main()
 
     cout << endl;
 
-   displaymessage(average);
+   displaymessage(average, name);
    cout << endl;
 
     return 0;
