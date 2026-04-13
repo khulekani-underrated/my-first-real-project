@@ -1,32 +1,39 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
 int main()
 {
     int num;
+    char choice;
+    int tries=0;
     srand(time(NULL));
-    num=(rand()%6)+1;
 
-    switch (num)
-    {
-        case 1:cout << "you hit 1";
-        break;
 
-        case 2:cout << "you hit 2";
-        break;
+    do{
+        num=(rand()%6)+1;
+        cout << "you rolled: "<< num << endl;
+        cout << endl;
+        tries++;
 
-        case 3:cout << "you hit 3";
-        break;
+        if(num==6)
+        {
+            cout << "correct hit" << endl;
+            break;
+        }
+        cout << "roll again? (y/n): ";
+        cin >> choice;
 
-        case 4:cout << "you hit 4";
-        break;
 
-        case 5:cout << "you hit 5";
-        break;
 
-        case 6:cout << "you hit 6";
-        break;
-    }
+
+    }while(choice == 'y' || choice== 'Y');
+
+    cout << "games over \n" << endl;
+    cout << "number of tries: "<< tries;
+    cout << endl;
+
     return 0;
 }
