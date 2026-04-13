@@ -36,6 +36,7 @@ int main()
     double marks1,marks2,marks3;
     double average;
     int student=0;
+    double classtotal=0;
     string next="yes"; //start with yes to enter the loop
 
     cout << "################# results and average generator program ####################" << endl;
@@ -46,6 +47,7 @@ int main()
 do{
 
      student++;
+
      cout <<"[student number " << student <<"]"<< endl;
      cout << "enter your name: ";
     getline(cin,name);
@@ -63,7 +65,7 @@ do{
 
     average= (marks1+marks2+marks3)/3;
     cout << "the average is : "<< average;
-
+    classtotal=classtotal+average;
     cout << endl;
 
     //grade letter
@@ -151,6 +153,13 @@ do{
 }while(next=="yes" || next=="Yes" || next=="YES");
 //LOOP WHILE ANSWER IS YES
 cout << "the number of student results recorded: " << student << endl;
+cout << endl;
+
+double classaverage=classtotal/student;
+cout << "the class average is: "<< classaverage << endl;
+cout << endl;
 cout << "thank you for using the grade system \n"<< endl;
+
+
     return 0;
 }
