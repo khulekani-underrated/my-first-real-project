@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -32,8 +33,10 @@ void displaymessage(double average, string name)
 
 int main()
 {
+
    string name;
     double marks1,marks2,marks3;
+    double grade;
     double average;
     int student=0;
     double classtotal=0;
@@ -58,13 +61,15 @@ do{
     cout << endl;
 
     cout << "your name is: " << name << endl;
-    cout << "marks 1: " << marks1 << endl;
-    cout << "marks 2: " << marks2 << endl;
-    cout << "marks 3: " << marks3 << endl;
+    cout << "marks 1: " << marks1 << " %"<< endl;
+    cout << "marks 2: " << marks2 << " %"<< endl;
+    cout << "marks 3: " << marks3 <<" %"<< endl;
+    cout << "your highest mark is: "<< max({marks1,marks2,marks3}) << endl;
+    cout << "your lowest mark is: "<< min({marks1,marks2,marks3});
     cout << endl;
 
     average= (marks1+marks2+marks3)/3;
-    cout << "the average is : "<< average;
+    cout << "the average is : "<< average << " %";
     classtotal=classtotal+average;
     cout << endl;
 
@@ -159,6 +164,13 @@ double classaverage=classtotal/student;
 cout << "the class average is: "<< classaverage << endl;
 cout << endl;
 cout << "thank you for using the grade system \n"<< endl;
+
+cout << endl;
+cout << endl;
+
+
+
+
 
 
     return 0;

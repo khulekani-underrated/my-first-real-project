@@ -1,6 +1,4 @@
-#include <iostream>
 
-using namespace std;
 
 #include <iostream>
 using namespace std;
@@ -53,7 +51,7 @@ int main() {
     double amount;
 
     do {
-        cout << "\n=== BANK MENU ===" << endl;
+        cout << "\n### BANK MENU ###" << endl;
         cout << "1. Deposit" << endl;
         cout << "2. Withdraw" << endl;
         cout << "3. Check Balance" << endl;

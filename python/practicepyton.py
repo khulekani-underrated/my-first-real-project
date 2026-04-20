@@ -30,3 +30,30 @@ mylist.append('toyota')
 print(mylist)
 mylist.insert(1,'honda')
 print(mylist)
+
+#boolen
+israining=False
+if israining:
+    print(f"you should not go outside")
+else:
+    print(f"you can go outside")
+
+student=False
+print(f"are you a student: {student}")
+
+#float
+gravity=9.8
+print(f"the force of gravity = {gravity}")
+
+#type casting = a process of converting a value of one data type to another
+
+student= True
+number=23
+years=2,5
+name='msizi m'
+
+number=float(number)
+print(number)
+print(type(number))
+student=str(student)
+print(type(student))
