@@ -165,8 +165,12 @@ cout << "the class average is: "<< classaverage << endl;
 cout << endl;
 cout << "thank you for using the grade system \n"<< endl;
 
+
 cout << endl;
+double class_highest=max({average});
+cout << "the class highest is "<< class_highest << " %" ;
 cout << endl;
+
 
 
 
