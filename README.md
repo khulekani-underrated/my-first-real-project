@@ -7,3 +7,5 @@ A C++ program that calculates student grades and provides feedback.
 - Calculate averages
 - Letter grades (A-F)
 - Personalized feedback
+- returns the class highest
+- prints out the highest and lowest students marks between the marks entered
