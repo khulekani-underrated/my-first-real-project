@@ -41,6 +41,8 @@ int main()
     int student=0;
     double classtotal=0;
     string next="yes"; //start with yes to enter the loop
+    string bestname;
+    double class_highest = -1;
 
     cout << "################# results and average generator program ####################" << endl;
     cout << "press enter to use.... \n";
@@ -71,6 +73,15 @@ do{
     average= (marks1+marks2+marks3)/3;
     cout << "the average is : "<< average << " %";
     classtotal=classtotal+average;
+    cout << endl;
+    cout << endl;
+
+    //check if this student has the highest average so far
+    if (average>class_highest)
+    {
+        class_highest=average;
+        bestname =name;
+    }
     cout << endl;
 
     //grade letter
@@ -167,8 +178,9 @@ cout << "thank you for using the grade system \n"<< endl;
 
 
 cout << endl;
-double class_highest=max({average});
-cout << "the class highest is "<< class_highest << " %" ;
+
+cout << "the class highest is: "<< class_highest << " %\n" ;
+cout << "achieved by: "<< bestname << endl;
 cout << endl;
 
 
