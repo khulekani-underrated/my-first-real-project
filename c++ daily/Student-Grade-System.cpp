@@ -31,11 +31,13 @@ void displaymessage(double average, string name)
     }
 }
 
+
+
 int main()
 {
 
    string name;
-    double marks1,marks2,marks3;
+    double marks1,marks2,marks3,marks4,marks5;
     double grade;
     double average;
     int student=0;
@@ -58,19 +60,21 @@ do{
     getline(cin,name);
     cout << endl;
 
-    cout << "enter your marks separated by space: ";
-    cin >> marks1 >> marks2 >> marks3 ;
+    cout << "enter your marks for 5 modeules separated by space: ";
+    cin >> marks1 >> marks2 >> marks3 >> marks4 >> marks5 ;
     cout << endl;
 
     cout << "your name is: " << name << endl;
-    cout << "marks 1: " << marks1 << " %"<< endl;
-    cout << "marks 2: " << marks2 << " %"<< endl;
-    cout << "marks 3: " << marks3 <<" %"<< endl;
-    cout << "your highest mark is: "<< max({marks1,marks2,marks3}) << endl;
-    cout << "your lowest mark is: "<< min({marks1,marks2,marks3});
+    cout << "mathematics: " << marks1 << " %"<< endl;
+    cout << "physics: " << marks2 << " %"<< endl;
+    cout << "geography: " << marks3 <<" %"<< endl;
+    cout << "chemistry: " << marks4 <<" %"<< endl;
+    cout << "computer science: " << marks5 <<" %"<< endl;
+    cout << "your highest mark is: "<< max({marks1,marks2,marks3,marks4,marks5}) << endl;
+    cout << "your lowest mark is: "<< min({marks1,marks2,marks3,marks4,marks5});
     cout << endl;
 
-    average= (marks1+marks2+marks3)/3;
+    average= (marks1+marks2+marks3+marks4+marks5)/5;
     cout << "the average is : "<< average << " %";
     classtotal=classtotal+average;
     cout << endl;
