@@ -57,3 +57,18 @@ print(number)
 print(type(number))
 student=str(student)
 print(type(student))
+
+#here we are looking at the input variable
+
+firstname=input("what is your name buddy: ")
+num_of_years=int(input("enter your age: "))
+num_of_years=num_of_years+1                             #this line shows an input variable with typecasting
+print(f"your name is {firstname} and you are {num_of_years} years old")
+
+igama1=input("igama1: ")
+igama2=input("igama2: ")
+igama3=input("igama3: ")
+igama4=input("igama4: ")
+igama5=input("igama5: "'\n')
+
+print(f"izolo ngibone u {igama1} he is my favourite person. she was walking with {igama2} and it was my first time seeing her. \n later on i saw {igama3} he is a great person")
