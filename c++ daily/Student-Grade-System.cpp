@@ -124,40 +124,134 @@ do{
    cout << endl;
    cout << endl;
 
-   if (marks1<50 && marks2<50 && marks3<50)
-   {
-       cout << "your marks for each module should be atleast 50 and above. you failed";
-   }
-   else if(marks1<50 && marks2>=50 && marks3>=50)
-   {
-       cout << "improve results for marks1";
-   }
-   else if(marks1<50 && marks2<50 && marks3>=50)
-   {
-       cout << "improve results for marks1 and marks 2";
-   }
-   else if(marks1>=50 && marks2>=50 && marks3<50)
-   {
-       cout << "improve results for marks3";
-   }
-    else if(marks1>=50 && marks2<50 && marks3<50)
-   {
-       cout << "improve results for marks2 and marks3";
-   }
-    else if(marks1>=50 && marks2<50 && marks3>=50)
-   {
-       cout << "improve results for marks2";
-   }
-    else if(marks1<50 && marks2>=50 && marks3<50)
-   {
-       cout << "improve results for marks1 and marks 3 \n"<< endl;
-   }
-
-
-   else
-   {
-       cout << "keep up the good work \n"<< endl;
-   }
+  if (marks1 < 50 && marks2 < 50 && marks3 < 50 && marks4 < 50 && marks5 < 50)
+{
+    cout << "your marks for each module should be atleast 50 and above. you failed";
+}
+else if (marks1 < 50 && marks2 < 50 && marks3 < 50 && marks4 < 50)
+{
+    cout << "improve results for marks1, marks2, marks3 and marks4";
+}
+else if (marks1 < 50 && marks2 < 50 && marks3 < 50 && marks5 < 50)
+{
+    cout << "improve results for marks1, marks2, marks3 and marks5";
+}
+else if (marks1 < 50 && marks2 < 50 && marks4 < 50 && marks5 < 50)
+{
+    cout << "improve results for marks1, marks2, marks4 and marks5";
+}
+else if (marks1 < 50 && marks3 < 50 && marks4 < 50 && marks5 < 50)
+{
+    cout << "improve results for marks1, marks3, marks4 and marks5";
+}
+else if (marks2 < 50 && marks3 < 50 && marks4 < 50 && marks5 < 50)
+{
+    cout << "improve results for marks2, marks3, marks4 and marks5";
+}
+else if (marks1 < 50 && marks2 < 50 && marks3 < 50)
+{
+    cout << "improve results for marks1, marks2 and marks3";
+}
+else if (marks1 < 50 && marks2 < 50 && marks4 < 50)
+{
+    cout << "improve results for marks1, marks2 and marks4";
+}
+else if (marks1 < 50 && marks2 < 50 && marks5 < 50)
+{
+    cout << "improve results for marks1, marks2 and marks5";
+}
+else if (marks1 < 50 && marks3 < 50 && marks4 < 50)
+{
+    cout << "improve results for marks1, marks3 and marks4";
+}
+else if (marks1 < 50 && marks3 < 50 && marks5 < 50)
+{
+    cout << "improve results for marks1, marks3 and marks5";
+}
+else if (marks1 < 50 && marks4 < 50 && marks5 < 50)
+{
+    cout << "improve results for marks1, marks4 and marks5";
+}
+else if (marks2 < 50 && marks3 < 50 && marks4 < 50)
+{
+    cout << "improve results for marks2, marks3 and marks4";
+}
+else if (marks2 < 50 && marks3 < 50 && marks5 < 50)
+{
+    cout << "improve results for marks2, marks3 and marks5";
+}
+else if (marks2 < 50 && marks4 < 50 && marks5 < 50)
+{
+    cout << "improve results for marks2, marks4 and marks5";
+}
+else if (marks3 < 50 && marks4 < 50 && marks5 < 50)
+{
+    cout << "improve results for marks3, marks4 and marks5";
+}
+else if (marks1 < 50 && marks2 < 50)
+{
+    cout << "improve results for marks1 and marks2";
+}
+else if (marks1 < 50 && marks3 < 50)
+{
+    cout << "improve results for marks1 and marks3";
+}
+else if (marks1 < 50 && marks4 < 50)
+{
+    cout << "improve results for marks1 and marks4";
+}
+else if (marks1 < 50 && marks5 < 50)
+{
+    cout << "improve results for marks1 and marks5";
+}
+else if (marks2 < 50 && marks3 < 50)
+{
+    cout << "improve results for marks2 and marks3";
+}
+else if (marks2 < 50 && marks4 < 50)
+{
+    cout << "improve results for marks2 and marks4";
+}
+else if (marks2 < 50 && marks5 < 50)
+{
+    cout << "improve results for marks2 and marks5";
+}
+else if (marks3 < 50 && marks4 < 50)
+{
+    cout << "improve results for marks3 and marks4";
+}
+else if (marks3 < 50 && marks5 < 50)
+{
+    cout << "improve results for marks3 and marks5";
+}
+else if (marks4 < 50 && marks5 < 50)
+{
+    cout << "improve results for marks4 and marks5";
+}
+else if (marks1 < 50)
+{
+    cout << "improve results for marks1";
+}
+else if (marks2 < 50)
+{
+    cout << "improve results for marks2";
+}
+else if (marks3 < 50)
+{
+    cout << "improve results for marks3";
+}
+else if (marks4 < 50)
+{
+    cout << "improve results for marks4";
+}
+else if (marks5 < 50)
+{
+    cout << "improve results for marks5";
+}
+else
+{
+    cout << "keep up the good work";
+}
    cout << endl;
    cout << "############################################################################";
    cout << endl;
