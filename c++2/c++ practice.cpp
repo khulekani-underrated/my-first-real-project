@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-class BankAccount {
+/*class BankAccount {
 private:
     double balance;
     string ownerName;
@@ -38,10 +38,10 @@ public:
         cout << "Account owner: " << ownerName << endl;
         cout << "Current balance: R" << balance << endl;
     }
-};
+};*/
 
 int main() {
-    string name;
+   /* string name;
     cout << "Enter your name: ";
     getline(cin, name);
 
@@ -79,7 +79,7 @@ int main() {
             default:
                 cout << "Invalid choice!" << endl;
         }
-    } while (choice != 4);
+    } while (choice != 4);*/
 
 
 
@@ -111,5 +111,54 @@ int main()
       }
       cout << endl;
   }*/
+
+  string questions[]={"1. what year was c++ created?: ",
+                       "2. who invented c++?: ",
+                       "3. what is the predecessor of c++?: ",
+                       "4. is the earth flat?: "};
+
+  string options[][4]= {{"a. 1969","b. 1975", "c. 1985", "d. 1989"},
+                      {"a. Guido Van Rossum","b. Bjarne stroustrup","c. john carmen","d. albert newton"},
+                      {"a. c","b. c+","c. c--","b++"},
+                      {"a. yes","b. no","c. sometimes","d. maybe"}};
+
+  char answerkey[] = {'c','b','a','b'};
+
+  int size= sizeof(questions)/sizeof(questions[0]);
+  char guess;
+  int score;
+
+  for(int i=0; i< size; i++)
+  {
+      cout << questions[i]<< endl;
+
+      for(int j=0; j< sizeof(options[i])/sizeof(options[i][0]);j++)
+      {
+          cout << options[i][j] << '\n';
+      }
+
+      cin >> guess;
+      guess = toupper(guess);
+
+      if(guess == answerkey[i])
+        {
+            cout <<"correct\n";
+            score++;
+        }
+        else
+        {
+            cout << "wrong\n";
+            cout << "answer: "<< answerkey[i]<< '\n';
+        }
+  }
+
+
+ cout << "results\n";
+ cout << "correct guesses: "<< score<< '\n';
+
+
+
+
+
     return 0;
 }
